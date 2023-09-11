@@ -1,0 +1,181 @@
+/*Quitando margenes de arriba*/
+* {
+   margin: 0;
+   padding: 0;
+}
+
+
+/* Resetear los estilos predeterminados */
+body,
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+
+/* Estilos para el encabezado */
+header {
+   background-color: #fff;
+   /* Cambia esto al color de fondo de tu barra de navegación */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-top: 40px;
+}
+
+
+/* Estilos para el logo */
+.logo img {
+   max-height: 50px;
+   /* Ajusta el tamaño máximo de tu logo según tus necesidades */
+}
+
+
+/* Estilos para la barra de navegación */
+nav ul {
+   list-style: none;
+   text-align: center;
+}
+
+
+nav ul li {
+   display: inline-block;
+   margin-right: 20px;
+   /* Espacio entre elementos del menú, puedes ajustarlo según tu diseño */
+}
+
+
+nav ul li:last-child {
+   margin-right: 0;
+   /* Elimina el margen derecho del último elemento del menú */
+}
+
+
+nav ul li a {
+   color: black;
+   font-size: 0.9rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding-left: 15px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: rale;
+   margin-right: 3rem;
+}
+
+
+nav ul li a:hover {
+   color: gainsboro;
+}
+
+
+/*Declarando la tipografía, escogida de google fonts*/
+@font-face {
+   font-family: rale;
+   src: url(Fuentes/Raleway-Regular.ttf);
+}
+
+/*Imagen principal de la página principal*/
+section{
+   padding-top: 2rem;
+}
+.gif-photo img {
+   width: 100%;
+   display: block;
+   height: auto;
+   align-items: center;
+}
+/*Poner descripción centrado a la dcha con margen a todos los lados*/
+.descripcion-foto{
+   margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*Poner foto a la dcha centrado y con margen por arriba*/
+.imagen-descripcion{
+   width: 50%;
+   margin-left: 3rem;
+   margin-bottom: 3rem;
+}
+/*Dar estilo al encabezado*/
+div h1 {
+   color: black;
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: rale;
+   text-align: center;
+   padding-bottom: 2rem;
+   margin-left: 2rem;
+}
+/*Estilo a la descripción*/
+div p {
+   color: black;
+   font-size: 0.9rem;
+   font-weight: lighter;
+   font-family: rale;
+   text-align: justify;
+   padding-left: 4rem;
+}
+/*Pie de página*/
+footer{
+  background-color: grey;
+  /*color: var(--second-c);*/
+}
+footer ul{
+  padding:0;
+}
+footer li{
+  list-style: none;
+}
+ /*Creamos un footer con 3 columnas (1-logo en blanco, 2- dirección, 3- redes sociales*/
+ footer{
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   column-gap: 5%;
+}
+.wrap-footer{
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.logo-footer img{
+  width: 16rem;
+  margin-top: 2rem;
+}
+.text-footer li{
+  color: white;
+  line-height: 2;
+  text-align: left;
+}
+.text-footer li , a{
+  color: white;
+  margin-top: 1rem;
+  line-height: 1;
+  text-align: center;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.text-footer h5 {
+  color: white;
+  line-height: 2;
+  text-transform: uppercase;
+  text-align: left;
+ margin-top: 2rem;
+}
+.redes-sociales h5{
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  padding-top: 2rem;
+}
+.redes-sociales img{
+  width: 1.9rem;
+  margin-top: 0.8rem;
+  padding: 0.3rem;
+  align-items: center;display: inline;
+}

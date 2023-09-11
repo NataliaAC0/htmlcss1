@@ -1,0 +1,198 @@
+/*Quitando margenes de arriba*/
+* {
+   margin: 0;
+   padding: 0;
+}
+
+
+/* Resetear los estilos predeterminados */
+body,
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+
+/* Estilos para el encabezado */
+header {
+   background-color: #fff;
+   /* Cambia esto al color de fondo de tu barra de navegación */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-top: 40px;
+}
+
+
+/* Estilos para el logo */
+.logo img {
+   max-height: 50px;
+   /* Ajusta el tamaño máximo de tu logo según tus necesidades */
+}
+
+
+/* Estilos para la barra de navegación */
+nav ul {
+   list-style: none;
+   text-align: center;
+}
+
+
+nav ul li {
+   display: inline-block;
+   margin-right: 20px;
+   /* Espacio entre elementos del menú, puedes ajustarlo según tu diseño */
+}
+
+
+nav ul li:last-child {
+   margin-right: 0;
+   /* Elimina el margen derecho del último elemento del menú */
+}
+
+
+nav ul li a {
+   color: black;
+   font-size: 0.9rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding-left: 15px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: rale;
+   margin-right: 3rem;
+}
+
+
+nav ul li a:hover {
+   color: gainsboro;
+}
+
+
+/*Declarando la tipografía, escogida de google fonts*/
+@font-face {
+   font-family: rale;
+   src: url(Fuentes/Raleway-Regular.ttf);
+}
+
+
+main{
+   padding-top: 7rem;
+}
+/*Establecer tamaño, font family, y márgenes del cuadro del presupuesto*/
+.presupuesto{
+   width: 600px;
+   height: auto;
+   padding: auto;
+   margin: auto;
+   font-family: rale;
+}
+/*Crear una línea de separación*/
+.linea {
+   border-top: 1px solid black;
+   height: 2px;
+   max-width: 200px;
+   padding: 0;
+   margin: 10px auto 40px auto; 
+}
+/*Dar estilo al título*/
+.presupuesto h1{
+   font-size: 2rem;
+   margin-bottom: 40px;
+   /*margin-top: 30px;*/
+   color: black;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: rale;
+   letter-spacing: 1px;
+}
+/*Dar estilo al texto*/
+.text{
+   width: 100%;
+   background: gainsboro;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 1rem;
+   border: 1px solid grey;
+   font-family: rale;
+   align-items: center;
+}
+
+.politica {
+   color: gray;
+   font-family: rale;
+   margin-bottom: 20px;
+}
+/*Estilo de botón a todo lo ancho*/
+.presupuesto .button{
+   width: 100%;
+   background-color: gainsboro;
+   border: 1px solid grey;
+   padding: 1rem;
+   color: black;
+   margin: 16px 0;
+   font-size: 1rem;
+   margin-bottom: 3rem;
+}
+
+/*Pie de página*/
+footer{
+   background-color: grey;
+   /*color: var(--second-c);*/
+ }
+ footer ul{
+   padding:0;
+ }
+ footer li{
+   list-style: none;
+ }
+ 
+/*Pie de página*/
+footer{
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   column-gap: 5%;
+}
+.wrap-footer{
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.logo-footer img{
+  width: 16rem;
+  margin-top: 2rem;
+}
+.text-footer li{
+  color: white;
+  line-height: 2;
+  text-align: left;
+}
+.text-footer li , a{
+  color: white;
+  margin-top: 1rem;
+  line-height: 1;
+  text-align: center;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.text-footer h5 {
+  color: white;
+  line-height: 2;
+  text-transform: uppercase;
+  text-align: left;
+ margin-top: 2rem;
+}
+.redes-sociales h5{
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  padding-top: 2rem;
+}
+.redes-sociales img{
+  width: 1.9rem;
+  margin-top: 0.8rem;
+  padding: 0.3rem;
+  align-items: center;display: inline;
+}
